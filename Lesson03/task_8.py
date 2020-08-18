@@ -8,14 +8,15 @@
 num_rows = 5
 num_cols = 4
 matr = []
-for i in range(num_rows):
+for i in range(1, num_rows + 1):
     inter = []
-    for j in range(num_cols):
-        inter.append(3)
+    print(f'{i}-я строка:')
+    for j in range(1, num_cols+1):
+        inter.append(int(input(f'введите {j} число {i}  строки ')))
     matr.append(inter)
 print(matr)
 
-# вывод матрицы с суммой в строке #1 ====================
+# вывод матрицы с суммой в строке
 for i in range(len(matr)):
     for j in range(len(matr[i])):
         print(f'{matr[i][j]:4}', end=' ')
