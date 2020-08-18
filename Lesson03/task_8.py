@@ -5,25 +5,25 @@
 В конце следует вывести полученную матрицу.
 
 """
-mmm = 5
-nnn = 4
-qwe = []
-for i in range(mmm):
+num_rows = 5
+num_cols = 4
+matr = []
+for i in range(num_rows):
     inter = []
-    for j in range(nnn):
+    for j in range(num_cols):
         inter.append(3)
-    qwe.append(inter)
-print(qwe)
+    matr.append(inter)
+print(matr)
 
 # вывод матрицы с суммой в строке #1 ====================
-for i in range(len(qwe)):
-    for j in range(len(qwe[i])):
-        print(f'{qwe[i][j]:4}', end=' ')
+for i in range(len(matr)):
+    for j in range(len(matr[i])):
+        print(f'{matr[i][j]:4}', end=' ')
     print(f'  ==>{sum(inter):4}')
     print()
 
 # #2 ========================
-for line in qwe:
+for line in matr:
     sum_line = 0
     for i, el in enumerate(line):
         sum_line += el
