@@ -21,12 +21,12 @@ def get_index(num16, value):
             return i
 
 
-def sum16(first_num, second_num, num16):
-    if len(first_num) > len(second_num):
-        first_num, second_num = second_num, first_num
-        second_num.extendleft('0' * (len(first_num) - len(second_num)))
-    if len(second_num) > len(first_num):
-        first_num.extendleft('0' * (len(second_num) - len(first_num)))
+def sum16(number_1, number_2, num16):
+    if len(number_1) > len(number_2):
+        number_1, number_2 = number_2, number_1
+        number_2.extendleft('0' * (len(number_1) - len(number_2)))
+    if len(number_2) > len(number_1):
+        number_1.extendleft('0' * (len(number_2) - len(number_1)))
 
     over15 = 0
     j = -1
@@ -34,9 +34,9 @@ def sum16(first_num, second_num, num16):
     rate = 16
     sum_int = deque()
     d = 0
-    while d < len(second_num):
-        first_index = get_index(num16, first_num[j])
-        second_index = get_index(num16, second_num[i])
+    while d < len(number_2):
+        first_index = get_index(num16, number_1[j])
+        second_index = get_index(num16, number_2[i])
         sum_index = first_index + second_index
         egg = (sum_index + over15) % rate
         sum_int.appendleft(egg)
