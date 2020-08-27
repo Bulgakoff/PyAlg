@@ -33,10 +33,9 @@ def qwe2():
         revers += rem_num_str
     print(f'finish == {revers}')
     lst_var = [MIM_N, MAX_N, revers, rem_num, rem_num_str]
-    # lst_var = {'MIM_N': MIM_N, 'MAX_N': MAX_N, 'result': revers}
 
     return lst_var
-    #
+
 
 
 lst = qwe2()
