@@ -13,7 +13,7 @@ array = [random.randint(0, 100) for m in range(m * 2 + 1)]
 print(f'начало {array}')
 
 
-def gnom_mediant_index(arr):
+def gnom_median(arr):
     i = 1
     while len(arr) > i:
         if arr[i - 1] > arr[i]:
@@ -30,4 +30,4 @@ def gnom_mediant_index(arr):
     return arr[len(arr) // 2]
 
 
-print(f'искомая медиана  = {gnom_mediant_index(array)} ')
+print(f'искомая медиана  = {gnom_median(array)} ')
