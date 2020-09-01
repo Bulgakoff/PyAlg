@@ -22,7 +22,7 @@ def gnom_median(arr):
                 i += 1
             elif i > len(arr) - 1:  # за время пути собачка могла подрасти
                 break
-            i = 1
+            i -= 1
         else:
             i += 1
     print(f'отсортированный массив {arr}')
