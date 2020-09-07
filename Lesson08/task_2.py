@@ -30,12 +30,12 @@ print(result_tree)  # словарь-дерево
 result_code = {}
 
 
-def haff_code(h_tree, path=''):
+def haff_code(h_tree, code=''):
     if not isinstance(h_tree, dict):
-        result_code[h_tree] = path
+        result_code[h_tree] = code
     else:
-        haff_code(h_tree[0], path=f'{path}0')
-        haff_code(h_tree[1], path=f'{path}1')
+        haff_code(h_tree[0], code=f'{code}0')
+        haff_code(h_tree[1], code=f'{code}1')
 
 
 haff_code(result_tree)
